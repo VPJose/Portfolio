@@ -2,7 +2,7 @@ const bar = document.getElementById('bar')
 const nav = document.getElementById('nav')
 const menu = document.getElementById('menu')
 const close = document.getElementById('close')
-const project = document.getElementById('potfolio')
+const project = document.getElementById('portfolio')
 let afterScroll = window.scrollY
 
 // Events

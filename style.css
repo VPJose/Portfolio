@@ -342,12 +342,12 @@ nav img {
 }
 
 /* Potfolio */
-.potfolio {
+.portfolio {
   width: 90%;
   margin: 70px auto;
 }
 
-.potfolio  .content-project{
+.portfolio  .content-project{
   width: 90%;
   margin: auto;
   display: grid;
