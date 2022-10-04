@@ -1,176 +1,252 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.jpg" />
   <title>Jose Vasquez | Front-end Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/style.css">
+  <script src="https://kit.fontawesome.com/c4d20c5298.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="container">
-    <nav id="nav">
-      <h1><a href="">JGPV</a></h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <header>
+    <nav>
+      <h1>&lt; VPJose &#47;&gt;</h1>
+      <ul class="nav-item">
+        <li><a href="#about" class="nav-link">Acerca de Mí</a></li>
+        <li><a href="#skill" class="nav-link">Habilidades</a></li>
+        <li><a href="#service" class="nav-link">Servicios</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
       </ul>
-      <img id='bar' class="bar" src="./assets/fontawesome/bars-solid.svg">
+      <button class="btn-menu" id="btn-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
-    <div class="navbar" id="menu">
-      <div class="content-navbar">
-        <img id='close' src="./assets/fontawesome/xmark-solid.svg" alt="">
-        <h1>JGVP</h1>
-        <div class="menu-items">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#service">Service</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </div>
-      </div>
+    <div id="navbar" class="navbar">
+      <button id="btn-close" class="btn-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <ul class="nav-item">
+        <li><a href="#about" class="nav-link">Acerca de Mí</a></li>
+        <li><a href="#skill" class="nav-link">Habilidades</a></li>
+        <li><a href="#service" class="nav-link">Servicios</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
     </div>
-    <div id="home" class="home">
-      <img src="assets/profile.png" alt="Jose Gregorio">
+  </header>
+  <main>
+    <section class="hero" id="about">
+      <img src="assets/profile.png" alt="foto de perfil">
       <div class="card">
-        <h2>
-          <p>Hi!</p>
-          <p>I'm Jose Vasquez</p>
-          <p>Front End Developer</p>
-        </h2>
-        <img src="./assets/fontawesome/laptop-code-solid.svg" alt="">
+        <h3>Jose Vasquez</h3>
+        <h4>
+          Desarrollador Front-end
+        </h4>
       </div>
-    </div>
-    <div id="about" class="about">
-      <div class="about-pf">
-        <h3>About</h3>
-        <h2>I'm Jose Vasquez web Developer </h2>
-        <p>I'm Front end developer, I live in Venezuela I like to work with code and the design of web pages, I am
-          passionate about javascript and css
+      <div class="about animate__animated animate__shakeX">
+        <h2 class="about-titulo">Sobre Mí</h2>
+        <p class="about-texto1">
+          Soy Desarrollador Web enfocado en Front-end
+        </p>
+        <p class="about-texto2">
+          Vivo en Venezuela y me enfoco en Diseño y Desarrollo de paginas, me
+          apasiona JavaScript y Css
         </p>
       </div>
-      <div class="skill">
-        <h3>Skill</h3>
-        <div class="img">
-          <figure data-name="Html">
-            <img src="./assets/fontawesome/html5-brands.svg">
-          </figure>
-          <figure data-name='Css'>
-            <img src="./assets/fontawesome/css3-alt-brands.svg">
-          </figure>
-          <figure data-name='JavaScript'>
-            <img src="./assets/fontawesome/js-brands.svg">
-          </figure>
-          <figure data-name='Reactjs'>
-            <img src="./assets/fontawesome/react-brands.svg">
-          </figure>
-          <figure data-name='Bootstrap'>
-            <img src="./assets/fontawesome/bootstrap-brands.svg">
-          </figure>
-          <figure data-name='Git'>
-            <img src="./assets/fontawesome/git-alt-brands.svg">
-          </figure>
-          <figure data-name='Firebase'>
-            <img src="./assets/fontawesome/logo-firebase.svg">
-          </figure>
-          <figure data-name='Res Api'>
-            <img src="./assets/fontawesome/rest-api.svg">
-          </figure>
-          <figure data-name='Tailwindcss'>
-            <img src="./assets//fontawesome/tailwind_icon_131947.svg">
-          </figure>
+    </section>
+    <section id="skill" class="skill">
+      <h2 class="header-skill">Habilidades</h2>
+      <div class="container-skill">
+        <div class="item-skill">
+          <img loading="lazy" src="https://img.icons8.com/color/96/000000/html-5--v1.png" />
+          <p>HTML</p>
+        </div>
+        <div class="item-skill">
+          <img loading="lazy" src="https://img.icons8.com/color/96/000000/css3.png" />
+          <p>CSS</p>
+        </div>
+        <div class="item-skill">
+          <img loading="lazy" src="https://img.icons8.com/color/96/000000/javascript--v1.png" />
+          <p>JavaScript</p>
+        </div>
+        <div class="item-skill">
+          <img loading="lazy" src="https://img.icons8.com/color/96/000000/react-native.png" />
+          <p>React.js</p>
+        </div>
+        <div class="item-skill">
+          <img loading="lazy"
+            src="https://img.icons8.com/external-those-icons-flat-those-icons/96/000000/external-Bootstrap-Logo-social-media-those-icons-flat-those-icons.png" />
+          <p>Bootstrap</p>
+        </div>
+        <div class="item-skill">
+          <img loading="lazy" src="https://img.icons8.com/color/96/000000/git.png" />
+          <p>Git</p>
+        </div>
+        <div class="item-skill">
+          <img loading="lazy" src="https://img.icons8.com/color/96/000000/firebase.png" />
+          <p>Firebase</p>
+        </div>
+        <div class="item-skill">
+          <img loading="lazy" src="https://img.icons8.com/color/96/000000/tailwind_css.png" />
+          <p>Tailwind</p>
+        </div>
+        <div class="item-skill">
+          <img loading="lazy"
+            src="https://img.icons8.com/external-others-inmotus-design/67/000000/external-API-vkontakte-others-inmotus-design-3.png" />
+          <p>Rest api</p>
         </div>
       </div>
-    </div>
-    <div id="service" class="service">
-      <h3>Service</h3>
-      <div>
-        <div class='img-service'>
-          <img src="./assets/undraw_responsive_re_e1nn.svg">
-          <p>Design web Responsive</p>
+    </section>
+    <section id="service" class="service">
+      <h2 class="service-title">Servicios</h2>
+      <div class="service-container">
+        <div class="service-item">
+          <img loading="lazy" src="assets/undraw_web_developer_re_h7ie.svg" alt="Desarrollo Web">
+          <p>Desarrollo Web</p>
         </div>
-        <div class='img-service'>
-          <img src="./assets/undraw_web_developer_re_h7ie.svg">
-          <p>Soluction Probles</p>
+        <div class="service-item">
+          <img loading="lazy" src="assets/undraw_responsive_re_e1nn.svg" alt="Diseño Web Responsivo">
+          <p>Diseño Web Responsivo</p>
         </div>
-        <div class='img-service'>
-          <img src="./assets/undraw_portfolio_website_re_jsdd.svg">
-          <p>Creatign Design</p>
+        <div class="service-item">
+          <img loading="lazy" src="assets/undraw_develop_app_re_bi4i.svg" alt="Desarrollo Aplicaciones Moviles">
+          <p>Desarrollo Aplicaciones Moviles</p>
         </div>
       </div>
-    </div>
-    <div id="portfolio" class="portfolio">
-      <h3>Projects</h3>
-      <div class="content-project">
-        <div class="project">
-          <img src='./assets/project1.png' class='front'>
-          <div class='back'>
-            <h2 class='title'>Task List</h2>
-            <p>ReactJs, React-Router, Responsive, Bootstrap and Firebase</p>
-            <div class='icon'>
-              <a href='https://github.com/VPJose/task-list-app-react' target="_blank"><img
-                  src="./assets/fontawesome/github-brands.svg" alt=""></a>
-              <a href='https://tasks-list-e3187.web.app' target="_blank"><img src="./assets/fontawesome/link-solid.svg"
-                  alt=""></a>
+    </section>
+    <section id="projects" class="projects">
+      <h2 class="project-title">Proyectos</h2>
+      <div class="project-container">
+        <div class="project-item">
+          <div class="item-title">
+            <h3>Task List</h3>
+          </div>
+          <div class="item-body">
+            <div class="item-left">
+              <img loading="lazy" src="assets/project1.png" alt="Task List">
+            </div>
+            <div class="item-right">
+              <div class="item-top">
+                <div class="react">
+                  <a target="blank" href="https://es.reactjs.org">React.js</a>
+                </div>
+                <div class="data">
+                  <a target="blank" href="https://firebase.google.com">Firebase</a>
+                </div>
+                <div class="bootstrap">
+                  <a target="blank" href="https://getbootstrap.com">Bootstrap</a>
+                </div>
+                <div class="react">
+                  <a target="blank" href="https://reactrouter.com/en/main">React-Router</a>
+                </div>
+              </div>
+              <div class="item-bottom">
+                <a target='blank' href="https://tasks-list-e3187.web.app" class="btn">
+                  <i class="fa-solid fa-link fa-1x icon"></i>
+                </a>
+                <a target='blank' href="https://github.com/VPJose/task-list-app-react" class="btn">
+                  <i class="fa-brands fa-github fa-2x icon"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="project">
-          <img src='./assets/project2.png' class='front'>
-          <div class='back'>
-            <h2 class='title'>Anime app</h2>
-            <p>Reactjs, React-Router, Responsive, Dark Mode and Rest Api: <a href="https://jikan.moe/"
-                target="_blank">jikan.moe</a>
-            </p>
-            <div class='icon'>
-              <a href='https://github.com/VPJose/anime-app' target='_blank'><img
-                  src="./assets/fontawesome/github-brands.svg" alt=""></a>
-              <a href='https://web-anime-vpjose.vercel.app' target='_blank'><img
-                  src="./assets/fontawesome/link-solid.svg" alt=""></a>
+        <div class="project-item">
+          <div class="item-title">
+            <h3>Anime App</h3>
+          </div>
+          <div class="item-body">
+            <div class="item-left">
+              <img loading="lazy" src="assets/project2.png" alt="Anime app">
+            </div>
+            <div class="item-right">
+              <div class="item-top">
+                <div class="react">
+                  <a target="blank" href="https://es.reactjs.org">React.js</a>
+                </div>
+                <div class="react">
+                  <a target="blank" href="https://reactrouter.com/en/main">React-Router</a>
+                </div>
+                <div class="data">
+                  <a target='blank' href="https://jikan.moe">Rest api:Jikan.moe</a>
+                </div>
+              </div>
+              <div class="item-bottom">
+                <a target='blank' href="https://web-anime-vpjose.vercel.app" class="btn">
+                  <i class="fa-solid fa-link fa-1x icon"></i>
+                </a>
+                <a target='blank' href="https://github.com/VPJose/anime-app" class="btn">
+                  <i class="fa-brands fa-github fa-2x icon"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="project">
-          <img src='./assets/project3.png' class='front'>
-          <div class='back'>
-            <h2 class='title'>Calculator</h2>
-            <p>Reactjs and TailwindCss</p>
-            <div class='icon'>
-              <a href='https://github.com/VPJose/calculator' target='_blank'><img
-                  src="./assets/fontawesome/github-brands.svg" alt=""></a>
-              <a href='https://calculator-vpjose.vercel.app' target='_blank'><img
-                  src="./assets/fontawesome/link-solid.svg" alt=""></a>
+        <div class="project-item">
+          <div class="item-title">
+            <h3>Calculator</h3>
+          </div>
+          <div class="item-body">
+            <div class="item-left">
+              <img loading="lazy" src="assets/project3.png" alt="Calculator">
+            </div>
+            <div class="item-right">
+              <div class="item-top">
+                <div class="react">
+                  <a target="blank" href="https://es.reactjs.org">React.js</a>
+                </div>
+                <div class="tailwind">
+                  <a target="blank" href="https://tailwindcss.com">TailwindCss</a>
+                </div>
+              </div>
+              <div class="item-bottom">
+                <a target='blank' href="https://calculator-vpjose.vercel.app" class="btn">
+                  <i class="fa-solid fa-link fa-1x icon"></i>
+                </a>
+                <a target='blank' href="https://github.com/VPJose/calculator" class="btn">
+                  <i class="fa-brands fa-github fa-2x icon"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="contact" class="contact">
-      <h3>Contact</h3>
-      <div class="link-contact">
-        <a href="https://www.facebook.com/josegregorio.vasquezpineda" target='blank'><img
-            src="./assets/fontawesome/facebook-brands.svg" alt="facebook"></a>
-        <a href="https://twitter.com/VasquezPinedaJG" target='blank'><img
-            src="./assets/fontawesome/square-twitter-brands.svg" alt="twitter"></a>
-        <a href="https://www.instagram.com/vpj0se/" target='blank'><img src="./assets/fontawesome/instagram-brands.svg"
-            alt="instagram"></a>
-        <a href="https://www.linkedin.com/in/jose-gregorio-745552189/" target='blank'><img
-            src="./assets/fontawesome/linkedin-brands.svg" alt="linkedin"></a>
-        <a href="https://github.com/VPJose" target='blank'><img src="./assets/fontawesome/github-brands.svg"
-            alt="github"></a>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="contact-title">Contacto</h2>
+      <div class="contact-container">
+        <img loading="lazy" src="assets/undraw_contact_us_re_4qqt.svg" alt="imagen de contacto">
+        <div class="contact-link">
+          <a target='blank' href="https://www.facebook.com/josegregorio.vasquezpineda" class='btn'>
+            <i class="fa-brands fa-facebook fa-3x icon"></i>
+          </a>
+          <a target='blank' href="https://twitter.com/VasquezPinedaJG" class="btn">
+            <i class="fa-brands fa-twitter fa-2x icon"></i>
+          </a>
+          <a target='blank' href="https://www.instagram.com/vpj0se/" class="btn">
+            <i class="fa-brands fa-instagram fa-3x icon"></i>
+          </a>
+          <a target='blank' href="https://github.com/VPJose" class="btn">
+            <i class="fa-brands fa-github fa-3x icon"></i>
+          </a>
+          <a target='blank' href="https://www.linkedin.com/in/jose-gregorio-745552189/" class="btn">
+            <i class="fa-brands fa-linkedin fa-3x icon"></i>
+          </a>
+        </div>
       </div>
+    </section>
+    <div id="drown-up" class="drown-up">
+      <i class="fa-solid fa-arrow-up"></i>
     </div>
-    <footer>
-      <p>Copyright © 2022&nbsp; Jose Gregorio Vasquez Pineda Ridge&nbsp;•&nbsp;Galway based Freelance Web &amp;
-        Developer</p>
-    </footer>
-  </div>
-  <script src="./app.js"></script>
+  </main>
+  <footer>
+    <h4>Pagina Web por Jose Vasquez Copyright &copy;2022</h4>
+  </footer>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
