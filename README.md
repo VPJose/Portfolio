@@ -1,5 +1,4 @@
 # Portfolio 💼 
-___
 <https://vpjose.github.io/Portfolio/>
 
 ## Construido con 🛠
@@ -8,4 +7,4 @@ ___
 - Javascript
 
 ## Autor 🧔
-
+[Jose Gregorio Vasquez Pineda](https://github.com/VPJose)
