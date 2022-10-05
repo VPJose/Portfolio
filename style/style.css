@@ -46,6 +46,7 @@ h2,
 h3,
 h4 {
   margin: 0;
+  font-family: var(--font-primary);
 }
 
 h1,
@@ -69,6 +70,9 @@ p {
 }
 
 /* Barra de Navegacion */
+header {
+  height: 85px;
+}
 
 nav {
   position: sticky;
@@ -82,6 +86,7 @@ nav {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
   transition: var(--transition);
+  height: 85px;
 }
 
 .enable {
@@ -111,7 +116,7 @@ nav .btn-menu li, nav .btn-close li {
   font-family: var(--font-secondary);
 }
 
-.nav-item a:hover {
+.nav-item a:hover, .active {
   font-weight: bold;
 }
 
@@ -130,7 +135,7 @@ nav .btn-menu li, nav .btn-close li {
 
 .btn-close {
   position: absolute;
-  top: 5%;
+  top: 2%;
   right: 5%;
   width: 50px;
   height: 50px;
@@ -170,9 +175,13 @@ nav .btn-menu li, nav .btn-close li {
 /* Main */
 
 section {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 20px 0;
+  padding: 100px 0 0px 0;
+}
+
+section .title {
+  padding-bottom: 40px;
+  font-size: 40px;
 }
 
 /* HERO */
@@ -184,7 +193,6 @@ section {
   gap: 1rem;
   max-width: 68.75rem;
   margin: auto;
-  padding: 15px 0;
 }
 
 .hero img {
@@ -207,16 +215,19 @@ section {
   justify-content: center;
   align-items: center;
   box-shadow: 2px 4px 6px var(--green);
+  margin-bottom: 30px;
 }
 
 .hero .card h3 {
   font-family: var(--font-primary);
-  font-size: var(--bold-font);
-  padding: 10px 0;
+  font-size: 25px;
+  color: var(--green);
+  text-shadow: 1px 1px 1px var(--dark);
 }
 
 .hero .card h4 {
   font-family: var(--font-secondary);
+  font-size: 25px;
 }
 
 .about {
@@ -236,14 +247,6 @@ section {
 }
 
 /* SKILL */
-
-.skill {
-  padding: 40px 0;
-}
-
-.skill .header-skill {
-  margin-bottom: 15px;
-}
 
 .skill .container-skill {
   display: flex;
@@ -275,9 +278,6 @@ section {
   font-family: var(--font-primary);
   font-size: var(--bold-font);
   font-weight: bold;
-}
-
-.skill .item-skill p {
   text-shadow: 2px 2px 2px var(--green);
 }
 
@@ -286,19 +286,12 @@ section {
 }
 
 /* Service */
-.service {
-  padding: 15px 0;
-}
-
-.service .service-title {
-  margin-bottom: 15px;
-}
 
 .service .service-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   justify-content: space-around;
 }
 
@@ -360,8 +353,9 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-content: start;
   flex-wrap: wrap;
-  column-gap: 10px;
+  gap: 10px;
 }
 
 .project-item .item-body .item-right .item-top div {
@@ -373,11 +367,11 @@ section {
 }
 
 .react {
-  background-color: #586cb9;
+  background-color: #132879;
 }
 
 .bootstrap {
-  background-color: #592c66;
+  background-color: #570e6c;
 }
 
 .data {
@@ -385,7 +379,12 @@ section {
 }
 
 .tailwind {
-  background-color: #00ACC1;
+  background-color: #067886;
+}
+
+.project-item .item-body .item-right .item-top div a {
+  color: var(--white);
+  font-weight: bold;
 }
 
 .project-item .item-body .item-right .item-bottom {
@@ -441,6 +440,10 @@ section {
   gap: 5px;
 }
 
+.contact .contact-container .contact-link a {
+  margin: 0 5px;
+}
+
 .contact .contact-container .contact-link .btn i{
   background-color: var(--white);
 }
@@ -494,11 +497,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 25px;
 }
 
 footer h4 {
   color: var(--white);
-  width: 60%;
+  width: fit-content;
   text-align: center;
 }
 
@@ -517,5 +521,23 @@ footer h4 {
 
   .btn-menu, .btn-close {
     display: block;
+  }
+
+  .skill .item-skill {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skill .item-skill img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .skill .item-skill p {
+    font-size: 15px;
+  }
+
+  footer h4 {
+    width: 300px;
   }
 }

@@ -12,9 +12,9 @@ drownUp.addEventListener("click", () => {
   })
 })
 
-btnMenu.addEventListener("click", () => {
+btnMenu.addEventListener("click", () =>
   navbar.classList.add("show")
-})
+)
 
 navbar.addEventListener("click", (e) => {
   if ((e.target.tagName == "A") || (e.target.tagName == "I"))
@@ -23,7 +23,7 @@ navbar.addEventListener("click", (e) => {
 
 window.addEventListener("scroll", () => {
 
-  if (window.scrollY >= 108) {
+  if (window.scrollY >= 85) {
 
     nav.classList.add("enable")
 
